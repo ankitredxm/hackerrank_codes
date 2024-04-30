@@ -1,0 +1,40 @@
+/*Watson likes to challenge Sherlock's math ability. He will provide a starting and ending value that describe a range of integers, inclusive of the endpoints. Sherlock must determine the number of square integers within that range.
+
+Note: A square integer is an integer which is the square of an integer, e.g. .
+
+Example
+
+
+There are three square integers in the range:  and . Return .
+
+Function Description*/
+
+
+//code
+
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main(){
+    int x,n1,n2;
+    cin>>x;
+    int count=0;
+    
+    while(x>0){
+        cin>>n1>>n2;
+        count=0;
+        int temp1=ceil(sqrt(n1));
+        int temp2=floor(sqrt(n2));
+        
+        for(int i=temp1;i<=temp2;++i){
+        ++count;
+        
+        
+    }
+    --x;
+    cout<<count<<endl;
+    }
+  
+}
