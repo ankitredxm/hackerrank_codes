@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string s1,s2;
+    cin>>s1>>s2;
+    int n,app,del;
+    cin>>n;
+    bool r;
+    int inc=0;
+    int i=0,j=0;
+   for(;i<s1.length()&&j<s2.length();++i,++j){
+       if(s1[i]!=s2[j]){
+           break;
+       }
+   }
+   int need=(s1.length()-i)+(s2.length()-j);
+   if(n>=need&&(n-need)%2==0 ||n>(s1.length()+s2.length())){
+       cout<<"Yes";
+   }else{
+       cout<<"No";
+   }
+    
+}
+    
